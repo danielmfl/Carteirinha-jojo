@@ -1,0 +1,163 @@
+/* Reset básico que você já tinha */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card {
+    background-color: #2a7b9b;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px; /* Largura fixa para manter formato de cartão */
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+}
+
+/* Títulos */
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.corpo {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.corpo h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Suas imagens */
+img {
+    max-width: 100%;
+}
+
+/* Foto/Logo do topo (UNE) */
+.corpo img {
+    width: 100px; /* Ajustado para não ficar gigante */
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os spans (CPF, RG, Data) */
+span {
+    color: whitesmoke;
+    font-size: 14px;
+    display: block; /* Um em cada linha */
+    margin-bottom: 4px;
+}
+
+/* --- A MÁGICA PARA FICAR LADO A LADO --- */
+.qr {
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    gap: 20px;               
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Destaque suave */
+    border-radius: 8px;
+}
+
+/* Imagem dentro da div QR (UBES) */
+.qr img {
+    width: 70px; 
+    border-radius: 5px;
+}
+
+/* Ajuste do texto que está dentro da div QR */
+.qr h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.qr p {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Logo final (ANPG) */
+div:last-child img {
+    width: 120px;
+    margin-top: 15px;
+}
+
+/* Estilização específica do Verso */
+.verso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra as logos para o topo e a lei para o fundo */
+    min-height: 280px; /* Ajuste para bater com a altura da frente */
+}
+
+/* Alinhamento das 3 logos no topo */
+.corpo-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    background-color: white; /* Muitas vezes o topo do verso é branco ou claro */
+    border-radius: 8px 8px 0 0;
+    padding-bottom: 15px;
+}
+
+.corpo-logos img {
+    width: 60px !important; /* Logos menores para caberem as três */
+    height: auto;
+}
+
+/* Faixa de validade (estilo a parte amarela da foto) */
+.validade-section {
+    background-color: #f1e05a; /* Cor amarelada da referência */
+    color: #333; /* Texto escuro para contrastar no amarelo */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: auto;
+    border-radius: 0 0 10px 10px;
+    gap: 15px;
+}
+
+.ano-circulo {
+    border: 2px solid #2a7b9b;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    flex-shrink: 0; /* Impede o círculo de amassar */
+}
+
+.texto-lei {
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.texto-lei p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+footer {
+  font-size: 24px; 
+}
